@@ -1,10 +1,15 @@
 def solution(myString, pat):
-    reverse =[]
+    swapped =[]
     for char in myString:
         if char == 'A':
-            reverse.append('B')
+            swapped.append('B')
         elif char == 'B':
-            reverse.append('A')
-    reverse_str = ''.join(reverse)
-    answer = 1 if pat in reverse_str else 0
+            swapped.append('A')
+    swapped = ''.join(swapped)
+    answer = 1 if pat in swapped else 0
     return answer
+
+# def solution(myString, pat):
+#     swapped = ''.join('B' if char =='A' else 'A' for char in myString)
+#     answer = 1 if pat in swapped else 0
+#     return answer
