@@ -1,3 +1,8 @@
+# 교집합 개수
+def solution(s1, s2):
+    return len(set(s1)&set(s2))
+
+# 반복문
 def solution(s1, s2):
     answer=0
     for i in s1:
