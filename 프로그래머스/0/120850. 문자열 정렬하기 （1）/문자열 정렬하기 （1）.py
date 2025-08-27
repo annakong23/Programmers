@@ -1,7 +1,25 @@
 def solution(my_string):
     answer = []
-    for i in my_string :
+    for i in list(my_string):
         if i.isdigit():
             answer.append(int(i))
-    answer.sort()
-    return answer
+    return sorted(answer)
+
+
+
+
+
+
+
+
+
+
+
+
+# def solution(my_string):
+#     answer = []
+#     for i in my_string :
+#         if i.isdigit():
+#             answer.append(int(i))
+#     answer.sort()
+#     return answer
