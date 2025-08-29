@@ -1,2 +1,2 @@
-nums = list(map(str, input().split()))
-print(int(nums[0]+nums[1])+int(nums[2]+nums[3]))
+a,b,c,d = map(str, input().split())
+print(int(a+b)+int(c+d))
