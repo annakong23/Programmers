@@ -1,4 +1,4 @@
--- 코드를 작성해주세요
-select concat(max(length),'cm') as MAX_LENGTH
+select concat(length, 'cm') MAX_LENGTH
 from fish_info
-
+order by length desc
+limit 1
